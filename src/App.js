@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from './components/Login';
 
 function App() {
+
   return (
-    <div className="App">
-     <h2>hello lofi.co-er!</h2>
+    <div className="relative bg-bg text-white min-h-screen overflow-auto">
+        <Login />
     </div>
   );
 }
