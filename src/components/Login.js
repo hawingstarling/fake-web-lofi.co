@@ -1,5 +1,5 @@
 import React from 'react';
-import { logoImg, close } from '../assets/images'
+import { logoImg } from '../assets/images'
 import Button from './Button'
 
 function Login() {

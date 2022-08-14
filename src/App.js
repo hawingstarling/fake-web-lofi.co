@@ -1,10 +1,12 @@
-import Login from './components/Login';
+// import Login from './components/Login';
+import Navbar from './components/Navbar';
 
+//  class (bg-bg, text-white) for Login
 function App() {
 
   return (
-    <div className="relative bg-bg text-white min-h-screen overflow-auto">
-        <Login />
+    <div className="relative min-h-screen overflow-auto">
+        <Navbar />
     </div>
   );
 }
