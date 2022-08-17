@@ -15,6 +15,7 @@ import homeRoom2Img from './home-room-2.jpg';
 import homeRoom3Img from './home-room-3.jpg';
 import homeRoom4Img from './home-room-4.jpg';
 import logoImg from './logo.gif';
+import clovr from './clovr.png'
 import oceanTales21Img from './ocean-tales-2-1.jpg';
 import oceanTales22Img from './ocean-tales-2-2.jpg';
 import setChillImg from './thumbnails/set-chill.png';
@@ -62,6 +63,7 @@ export {
 	homeRoom3Img,
 	homeRoom4Img,
 	logoImg,
+	clovr,
 	oceanTales21Img,
 	oceanTales22Img,
 	setChillImg,

@@ -20,7 +20,7 @@
 	--color-transparent-b-80: rgba(0, 0, 0, 0.8);
 	--color-bg: #1c1a23;
 	--color-bg-menu: #070707;
-	--color-bg-200: #14141d;
+	--color-bg-200: rgb(40, 40, 40, .3);
 	--color-bg-300: #24242f;
 	--color-bg-400: rgba(243, 169, 82, 0.1);
 	--color-clear: transparent;
@@ -91,6 +91,14 @@ textarea {
 
 .bg-login {
 	background-color: var(--color-login);
+}
+
+.bg-color-300 {
+	background-color: var(--color-bg-300);
+}
+
+.bg-color-200 {
+	background-color: var(--color-bg-200);	
 }
 
 .color-border {
@@ -171,6 +179,10 @@ input[type="checkbox"]:checked ~ .switch-button:before {
 	transform: translateX(-100%);
 }
 
+.switch-button:active {
+	box-shadow: 0 0 0 5px rgb(0 0 0 / 10%);
+}
+
 .switch-button:active::before {
 	width: 30px;
 	padding-right: 15px;
@@ -178,17 +190,16 @@ input[type="checkbox"]:checked ~ .switch-button:before {
 
 .day-night {
 	position: absolute;
-	top: 8px;
-	right: 4px;
-	margin-right: 4px;
+	top: 50%;
+	right: 6px;
+	transform: translateY(-50%);
 	transition: all .2s ease-in-out;
 }
 
 input[type="checkbox"]:checked ~ label span .day-night {
-	right: calc(100% - 2px);
-	transform: translateX(100%);
-	top: 8px;
-	left: -8px;
+	top: 50%;
+	left: 6px;
+	transition: all .8s ease-in-out;
 }
 
 .premium {

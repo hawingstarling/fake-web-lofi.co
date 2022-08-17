@@ -35,7 +35,10 @@ import volumeActive from './volume-active.svg'
 import volumeMuted from './volume-muted.svg'
 import share from './share.svg'
 import menu from './menu.svg'
-
+import mixer from './mixer.svg'
+import templates from './templates.svg'
+import scenes from './scenes.svg'
+import tools from './tools.svg'
 
 import cityIcon from './noises/city.svg';
 import cityRainIcon from './noises/city-rain.svg';
@@ -88,6 +91,10 @@ export {
 	volumeMaxIcon,
 	volumeMinIcon,
 	xIcon,
+	mixer,
+	templates,
+	scenes,
+	tools,
 	cityIcon,
 	cityRainIcon,
 	fireplaceIcon,

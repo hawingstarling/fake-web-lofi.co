@@ -14,12 +14,13 @@ import Button from './Button'
 import NavMenu from './NavMenu'
 import { useState } from 'react'
 function Navbar() {
+    const [timerDay, setTimerDay] = useState(true);
 
     var time = new Date()
     const timer = time.toLocaleString('en-US', { hour: '2-digit', hour12: true, minute: '2-digit' })
 
     return ( 
-        <div className="bg-bg h-[80px]">
+        <div className="fixed z-10 h-[80px]">
             <nav className="flex flex-row justify-between items-center h-[80px] py-0 px-[48px] w-screen">
                 <div>
                     <a href="#">
@@ -36,14 +37,18 @@ function Navbar() {
                     <div>
                         <span className="flex items-center">
                             <input type="checkbox" id="toggle-button"
-                                className="peer appearance-none invisible hiden "
+                                className="peer appearance-none invisible hiden"
+                                onChange={ () => setTimerDay(!timerDay) }
                             />
                             <label htmlFor="toggle-button"
                                 className="peer-checked:bg-[#f3a952] relative block w-[60px] h-[32px]
                                 bg-[#BFBFBF] cursor-pointer rounded-[22px] overflow-hidden
                                 switch-button"
                             >
-                                <span><img className="day-night" src={moonIcon} alt="day-night" /></span>
+                                <span>
+                                    { timerDay ? <img className="day-night" src={moonIcon} alt="day-night" /> 
+                                               : <img className="day-night" src={sunIcon} alt="day-night" /> }
+                                </span>
                             </label>
                         </span>
                     </div>
