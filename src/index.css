@@ -20,6 +20,7 @@
 	--color-transparent-b-80: rgba(0, 0, 0, 0.8);
 	--color-bg: #1c1a23;
 	--color-bg-menu: #070707;
+	--color-bg-100: #121212;
 	--color-bg-200: rgb(40, 40, 40, .3);
 	--color-bg-300: #24242f;
 	--color-bg-400: rgba(243, 169, 82, 0.1);
@@ -91,6 +92,10 @@ textarea {
 
 .bg-login {
 	background-color: var(--color-login);
+}
+
+.bg-color-100 {
+	background-color: var(--color-bg-100);
 }
 
 .bg-color-300 {
@@ -233,3 +238,11 @@ input[type="checkbox"]:checked ~ label span .day-night {
     font-weight: 500;
     padding: 6px;
 }
+
+/* .btn-lofi-player:hover .btn-hover-lofi {
+	visibility: visible;
+} */
+/* 
+.btn-hover-lofi:hover ~ .btn-lofi-player {
+	visibility: visible;
+} */

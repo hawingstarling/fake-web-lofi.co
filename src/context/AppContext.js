@@ -2,6 +2,8 @@ import { createContext, useContext, useRef, useState } from 'react'
 import { BACKGROUND_LINKS_LIST, CHILL_LINKS } from '../constants'
 
 function AppProvider({ children }) {
+	const mainSongRef = useRef();
+	const noisesRefs = useRef([]);
     const [background, setBackground] = useState({
         set: 'chill',
         scene: 'scene1',
@@ -18,7 +20,7 @@ function AppProvider({ children }) {
 
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentSong, setCurrentSong] = useState(() => {
-        const randomIndex = Math.floor(Math.random * CHILL_LINKS.length)
+        const randomIndex = Math.floor(Math.random() * CHILL_LINKS.length)
         return {
             list: CHILL_LINKS,
             index: randomIndex,
@@ -29,7 +31,9 @@ function AppProvider({ children }) {
     const value = { 
         background, setBackground,
         isPlaying, setIsPlaying,
-        currentSong, setCurrentSong
+        currentSong, setCurrentSong,
+        mainSongRef,
+        noisesRefs
     }
 
     return ( 

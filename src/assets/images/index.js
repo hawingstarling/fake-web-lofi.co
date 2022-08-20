@@ -44,6 +44,7 @@ import sceneVan2Img from './thumbnails/scene-van-2.png';
 import sceneSummer1Img from './thumbnails/scene-summer-1.png';
 import sceneSummer2Img from './thumbnails/scene-summer-2.png';
 import mosaicImg from './social-mosaic.svg';
+import menuRounded from './menu-rounded.svg'
 
 export {
 	cafe1Img,
@@ -92,4 +93,5 @@ export {
 	sceneSummer1Img,
 	sceneSummer2Img,
 	mosaicImg,
+	menuRounded,
 };

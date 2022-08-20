@@ -39,6 +39,9 @@ import mixer from './mixer.svg'
 import templates from './templates.svg'
 import scenes from './scenes.svg'
 import tools from './tools.svg'
+import lofiPlayer from './lofi-player.svg'
+import lofiPlayerx18 from './lofi-playerx18x18.svg'
+import spotify from './spotify.svg'
 
 import cityIcon from './noises/city.svg';
 import cityRainIcon from './noises/city-rain.svg';
@@ -114,5 +117,8 @@ export {
 	volumeActive,
 	volumeMuted,
 	share,
-	menu
+	menu,
+	lofiPlayer,
+	lofiPlayerx18,
+	spotify
 };
