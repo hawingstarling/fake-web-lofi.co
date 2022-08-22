@@ -21,6 +21,7 @@
 	--color-bg: #1c1a23;
 	--color-bg-menu: #070707;
 	--color-bg-100: #121212;
+	--color-bg-150: #00000080;
 	--color-bg-200: rgb(40, 40, 40, .3);
 	--color-bg-300: #24242f;
 	--color-bg-400: rgba(243, 169, 82, 0.1);
@@ -96,6 +97,10 @@ textarea {
 
 .bg-color-100 {
 	background-color: var(--color-bg-100);
+}
+
+.bg-color-150 {
+	background-color: var(--color-bg-150);
 }
 
 .bg-color-300 {
@@ -246,3 +251,25 @@ input[type="checkbox"]:checked ~ label span .day-night {
 .btn-hover-lofi:hover ~ .btn-lofi-player {
 	visibility: visible;
 } */
+
+.circle-hover {
+	transition: all .2s ease-in-out;
+}
+
+.label-sound {
+    transition: all .2s ease-in-out;
+}
+
+.wrapper-sound:hover > .circle-hover {
+	border-color: var(--color-primary);
+}
+
+.wrapper-sound:hover > .circle-hover > .circle-in {
+	background-color: var(--color-primary);
+	visibility: visible;
+}
+
+.wrapper-sound:hover > .circle-hover + .label-sound {
+	visibility: visible;
+	transform: scale(1);
+}

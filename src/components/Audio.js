@@ -63,11 +63,13 @@ function Audio() {
                     <Button
                         onClick={() => {
                             console.log('nextSong: ', currentSong);
-                            setCurrentSong({
+                            let newSong = setCurrentSong({
                                 ...currentSong,
                                 index: nextSong(currentSong.list, currentSong.index).index,
                                 link: nextSong(currentSong.list, currentSong.index).link
                             })
+                            console.log('nextSong while click: ', newSong);
+                            return newSong
                         }}
                     >
                         <img src={nextIcon} className="cursor-pointer" alt="" />

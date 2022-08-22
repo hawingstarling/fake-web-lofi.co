@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Background from './components/Background';
 import Audio from './components/Audio'
 import Mood from './components/Mood';
+import Sound from './components/Sound'
 //  class (bg-bg, text-white) for Login
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Background />
         <Audio />
         <Mood />
+        <Sound />
     </div>
   );
 }

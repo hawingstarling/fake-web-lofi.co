@@ -1,0 +1,1 @@
+export const keyboard = 'https://s3.us-east-2.amazonaws.com/lofi.co/lofi.co/effects/keyboard.mp3'
